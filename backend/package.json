@@ -1,12 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Monku The Money Monkey's Backend ",
+  "description": "Monku The Money Monkey",
   "license": "ISC",
   "author": "Arun",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "dev"
+    "test": "dev",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "nodemon": "^3.1.11"
   }
 }
